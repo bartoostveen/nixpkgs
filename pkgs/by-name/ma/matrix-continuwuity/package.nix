@@ -17,17 +17,17 @@
 
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "matrix-continuwuity";
-  version = "26.11.0-unstable-2026-11-10";
+  version = "26.11.0-alpha.1-unstable-2026-11-13";
 
   src = fetchFromGitea {
     domain = "forgejo.ellis.link";
     owner = "continuwuation";
     repo = "continuwuity";
-    rev = "0a52421b65ce737714dd5031dfab2b5eea2a83b4";
-    hash = "sha256-DOCjQvpYMSzt4aENWHD1wAiIo9XXkjRdGV8vVDWkxC4=";
+    rev = "7afe5885e9c6a41c198d36f063acf6aa138c767f";
+    hash = "sha256-q/RMyfUCBsVt+ocxFbeU3bFmREtDuMIbbWxvkd8IQZ4=";
   };
 
-  cargoHash = "sha256-1GE6DjlQAlWgP2krQBosOhhl/9m0KeTC9v7h0TpyRUw=";
+  cargoHash = "sha256-aKHGvF8PlhxLiUXd1LeP3cqDqulJHm380VlxKjMrhZM=";
 
   nativeBuildInputs = [
     pkg-config
